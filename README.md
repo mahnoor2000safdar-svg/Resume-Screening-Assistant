@@ -1,6 +1,3 @@
-
-
-```markdown
 # Resume/CV Screening Assistant
 
 ## Project Overview
