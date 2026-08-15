@@ -1,4 +1,5 @@
-#  Resume/CV Screening Assistant
+````markdown
+# Resume/CV Screening Assistant
 
 ## Project Overview
 
@@ -12,15 +13,6 @@ The system analyzes resume content, identifies relevant skills, detects missing 
 
 The main objective of this project is to make the initial resume screening process faster, more consistent, and easier to evaluate by automatically comparing candidate resumes with the requirements of a Job Description.
 
----
-
-## Problem / Use Case
-
-Organizations and companies may receive many resumes for a single internship or job opening. Manually reviewing every resume can be time-consuming and inconsistent.
-
-Resume Intelligence provides an initial screening assistant that compares candidate resumes with a given Job Description and helps identify the most relevant candidates more efficiently.
-
-The system is designed to support recruiters during the initial shortlisting stage and does not replace human decision-making.
 ---
 
 ## Key Features
@@ -56,16 +48,20 @@ The system identifies required skills from the Job Description and checks whethe
 
 ### Final Score
 
+```text
 Final Score =
 (TF-IDF Similarity × 0.55)
 +
 (Skill Match × 0.45)
+````
+
 A higher score indicates stronger relevance to the provided Job Description.
 
 ---
 
 ### System Workflow
 
+```text
 Job Description
        ↓
 Resume Upload / Sample Resumes
@@ -81,6 +77,7 @@ Final Match Score
 Candidate Ranking
        ↓
 Matched & Missing Skills
+```
 
 ---
 
@@ -98,19 +95,9 @@ Matched & Missing Skills
 
 ---
 
-## Sample Dataset
-
-The project uses 10 anonymized/sample candidate resumes and one Job Description for testing and demonstration.
-
-The sample resumes are stored in the `resumes/` folder and include both PDF/TXT-compatible resume data where applicable.
-
-No private or personally identifiable candidate information should be used in the dataset.
-
----
-
 ## Project Structure
 
-
+```text
 Resume_CV_Screening_Assistant/
 │
 ├── app.py
@@ -127,6 +114,7 @@ Resume_CV_Screening_Assistant/
 │   └── ...
 │
 └── output/
+```
 
 ---
 
@@ -138,18 +126,23 @@ Open the project folder in VS Code and run:
 
 ```bash
 python -m pip install -r requirements.txt
+```
 
 ### 2. Start the Application
 
 ```bash
 python -m streamlit run app.py
+```
 
 ### 3. Open the Application
 
 The application will open in the browser at:
 
-http://localhost:8501
 ```text
+http://localhost:8501
+```
+
+---
 
 ## How to Use
 
@@ -177,6 +170,7 @@ The system generates a ranked list of candidates containing:
 * Matched Skills
 * Missing Skills
 
+---
 
 ## Output
 
@@ -193,22 +187,6 @@ This allows recruiters to quickly identify candidates whose resumes are more rel
 
 ---
 
-## Ranked Output Example
-
-After screening the sample resumes, the system generates a ranked candidate list based on the calculated Match Score.
-
-Example output:
-
-| Rank | Candidate | Match Score | TF-IDF Score | Skill Match |
-|------|-----------|-------------|--------------|-------------|
-| 1 | Candidate_01 | 43.49 | 22.33 | 92.86 |
-| 2 | Candidate_02 | 41.39 | 25.45 | 78.57 |
-| 3 | Candidate_07 | 38.49 | 21.31 | 78.57 |
-
-The complete ranking is displayed in the Streamlit application.
----
-
-
 ## Privacy & Responsible Use
 
 This system is intended to support the initial recruitment screening process.
@@ -216,20 +194,6 @@ This system is intended to support the initial recruitment screening process.
 Screening results should be treated as an assistive assessment and **not as the sole basis for hiring decisions**.
 
 Users should avoid uploading private candidate information without proper authorization.
-
----
-
-## Ethical Considerations
-
-Automated resume screening can introduce bias if the underlying data, rules, or matching criteria are biased.
-
-To reduce potential risks:
-
-- Use anonymized/sample resumes for testing.
-- Avoid using sensitive personal attributes for scoring.
-- Do not use the system as the sole basis for hiring decisions.
-- Human review should be performed before making recruitment decisions.
-- Screening results should be considered recommendations rather than final judgments.
 
 ---
 
@@ -252,14 +216,8 @@ To reduce potential risks:
 * Candidate database integration
 * Advanced analytics and visualizations
 
----
+```
 
 
-
-
-
-
-
-
-
+```
 
