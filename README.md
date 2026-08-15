@@ -57,16 +57,21 @@ The system identifies required skills from the Job Description and checks whethe
 
 ### Final Score
 
+```text
 Final Score =
 (TF-IDF Similarity × 0.55)
 +
 (Skill Match × 0.45)
+
+```
+
 A higher score indicates stronger relevance to the provided Job Description.
 
 ---
 
 ## System Workflow
 
+```text
 Job Description
        ↓
 Resume Upload / Sample Resumes
@@ -82,6 +87,8 @@ Final Match Score
 Candidate Ranking
        ↓
 Matched & Missing Skills
+
+```
 
 ---
 
@@ -111,6 +118,7 @@ No private or personally identifiable candidate information should be used in th
 
 ## Project Structure
 
+```text
 Resume_CV_Screening_Assistant/
 │
 ├── data/
@@ -140,6 +148,8 @@ Resume_CV_Screening_Assistant/
 ├── Screenshot2.png
 └── Screenshot3.png
 
+```
+
 ---
 
 ## How to Run
@@ -148,17 +158,23 @@ Resume_CV_Screening_Assistant/
 
 Open the project folder in VS Code and run:
 
+```bash
 python -m pip install -r requirements.txt
+
+```
 
 ### 2. Start the Application
 
+```bash
 python -m streamlit run app.py
+
+```
 
 ### 3. Open the Application
 
 The application will open in the browser at:
 
-http://localhost:8501
+`http://localhost:8501`
 
 ---
 
@@ -188,6 +204,7 @@ The system generates a ranked list of candidates containing:
 * Matched Skills
 * Missing Skills
 
+---
 
 ## Output
 
@@ -211,14 +228,14 @@ After screening the sample resumes, the system generates a ranked candidate list
 Example output:
 
 | Rank | Candidate | Match Score | TF-IDF Score | Skill Match |
-|------|-----------|-------------|--------------|-------------|
+| --- | --- | --- | --- | --- |
 | 1 | Candidate_01 | 43.49 | 22.33 | 92.86 |
 | 2 | Candidate_02 | 41.39 | 25.45 | 78.57 |
 | 3 | Candidate_07 | 38.49 | 21.31 | 78.57 |
 
 The complete ranking is displayed in the Streamlit application.
----
 
+---
 
 ## Privacy & Responsible Use
 
@@ -236,11 +253,11 @@ Automated resume screening can introduce bias if the underlying data, rules, or 
 
 To reduce potential risks:
 
-- Use anonymized/sample resumes for testing.
-- Avoid using sensitive personal attributes for scoring.
-- Do not use the system as the sole basis for hiring decisions.
-- Human review should be performed before making recruitment decisions.
-- Screening results should be considered recommendations rather than final judgments.
+* Use anonymized/sample resumes for testing.
+* Avoid using sensitive personal attributes for scoring.
+* Do not use the system as the sole basis for hiring decisions.
+* Human review should be performed before making recruitment decisions.
+* Screening results should be considered recommendations rather than final judgments.
 
 ---
 
@@ -263,4 +280,6 @@ To reduce potential risks:
 * Candidate database integration
 * Advanced analytics and visualizations
 
----
+```
+
+```
