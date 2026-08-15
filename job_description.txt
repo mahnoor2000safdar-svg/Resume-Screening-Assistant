@@ -1,0 +1,19 @@
+Software Engineering Intern
+
+We are looking for a motivated Software Engineering Intern to join our development team.
+
+Requirements:
+- Basic knowledge of Python
+- HTML and CSS
+- JavaScript
+- SQL
+- Git and GitHub
+- Problem-solving skills
+- Basic understanding of software development
+- Good communication skills
+
+Preferred:
+- Experience with React
+- Knowledge of APIs
+- Familiarity with databases
+- Teamwork and willingness to learn
