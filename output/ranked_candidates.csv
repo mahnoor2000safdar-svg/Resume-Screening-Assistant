@@ -1,1 +1,11 @@
-
+﻿Rank,Candidate,Match Score,TF-IDF Score,Skill Match,Matched Skills,Missing Skills
+1,Candidate_01,51.07,16.16,93.75,"api, apis, communication, css, database, databases, git, github, html, java, javascript, python, react, sql, teamwork",software development
+2,Candidate_02,46.08,22.41,75,"communication, css, database, databases, git, github, html, java, javascript, python, sql, teamwork","api, apis, react, software development"
+3,Candidate_07,43.78,18.24,75,"api, apis, communication, css, git, github, html, java, javascript, python, react, sql","database, databases, software development, teamwork"
+4,Candidate_09,32.28,12.66,56.25,"communication, css, database, git, github, html, java, javascript, sql","api, apis, databases, python, react, software development, teamwork"
+5,Candidate_10,31,10.33,56.25,"api, apis, database, databases, java, javascript, python, sql, teamwork","communication, css, git, github, html, react, software development"
+6,Candidate_06,29.7,13.08,50,"api, apis, css, html, java, javascript, react, teamwork","communication, database, databases, git, github, python, software development, sql"
+7,Candidate_03,25.58,10.72,43.75,"css, git, html, java, javascript, python, sql","api, apis, communication, database, databases, github, react, software development, teamwork"
+8,Candidate_04,23.62,7.16,43.75,"communication, css, git, html, java, javascript, teamwork","api, apis, database, databases, github, python, react, software development, sql"
+9,Candidate_05,22.2,9.68,37.5,"database, databases, git, python, sql, teamwork","api, apis, communication, css, github, html, java, javascript, react, software development"
+10,Candidate_08,10.22,8.36,12.5,"communication, python","api, apis, css, database, databases, git, github, html, java, javascript, react, software development, sql, teamwork"
